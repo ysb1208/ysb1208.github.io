@@ -23,7 +23,7 @@
         .nav-links li { margin: 0 15px; }
         .nav-links a { color: white; text-decoration: none; font-size: 20px; font-weight: bold; }
         .nav-links a:hover { text-decoration: underline; }
-        section { padding: 100px 20px; margin-top: 80px; }
+        section { padding: 100px 20px; scroll-margin-top: 90px; }
         ul {
     padding-left: 20px;  /* 필요에 따라 조절 */
     margin-left: 0;
@@ -43,6 +43,10 @@
     background-color: white;
     color: #1a1d2b;
 }
+
+html {
+    scroll-behavior: smooth;
+}
     </style>
 </head>
 <body>
@@ -50,9 +54,10 @@
 <nav class="navbar">
     <div class="logo">Yoonsungbin</div>
     <ul class="nav-links">
-        <li><a href="/" data-ko="소개" data-en="About">About</a></li>
-        <li><a href="research.html" data-ko="연구 관심사" data-en="Research Interests">Research Interests</a></li>
-        <li><a href="projects.html" data-ko="프로젝트" data-en="Projects">Projects</a></li>
+        <li><a href="#about" data-ko="소개" data-en="About">About</a></li>
+        <li><a href="#research" data-ko="연구 관심사" data-en="Research Interests">Research Interests</a></li>
+        <li><a href="#projects" data-ko="프로젝트" data-en="Projects">Projects</a></li>
+
     </ul>
     <button id="langToggle" style="margin-left:20px;"></button>
 </nav>
@@ -389,6 +394,7 @@ Improve the algorithm to ensure no collisions occur during detection and stoppin
 
 </body>
 </html>
+
 
 
 
