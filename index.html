@@ -50,30 +50,31 @@ html {
 }
 
 .skills-table {
-    width: 70%;        /* ✅ 표 너비 줄이기 */
-    margin: 15px auto; /* ✅ 가운데 정렬 */
+    width: 55%;          /* 60 → 55 (조금 더 컴팩트) */
+    margin-left: 0;
+    margin-right: auto;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 14px;
     background: white;
 }
 
 .skills-table th,
 .skills-table td {
     border: 1px solid #ddd;
-    padding: 14px;
-    text-align: center;
+    padding: 8px 10px;   /* ⭐ 핵심: 14px → 줄이기 */
+    text-align: left;    /* ⭐ center → left */
     vertical-align: top;
 }
 
 .skills-table th {
     background-color: #1a1d2b;
     color: white;
-    font-size: 18px;
+    font-size: 15px;     /* 18 → 축소 */
 }
 
 .skills-table td {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 14px;     /* 16 → 축소 */
+    line-height: 1.5;    /* 1.8 → 밀도 증가 */
 }
         
     </style>
@@ -422,6 +423,7 @@ Improve the algorithm to ensure no collisions occur during detection and stoppin
 
 </body>
 </html>
+
 
 
 
