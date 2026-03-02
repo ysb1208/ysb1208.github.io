@@ -1,5 +1,5 @@
 (function () {
-    const DEFAULT_LANG = "en";
+    const DEFAULT_LANG = "ko";
     let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
 
     function applyLanguage() {
