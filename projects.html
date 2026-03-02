@@ -19,7 +19,9 @@
     cursor: pointer;
     border-radius: 6px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 #langToggle:hover {
     background-color: white;
     color: #1a1d2b;
@@ -31,9 +33,9 @@
 <nav class="navbar">
     <div class="logo">Yoonsungbin</div>
     <ul class="nav-links">
-        <li><a href="/" data-ko="소개" data-en="About">About</a></li>
-        <li><a href="research.html" data-ko="연구 관심사" data-en="Research Interests">Research Interests</a></li>
-        <li><a href="projects.html" data-ko="프로젝트" data-en="Projects">Projects</a></li>
+        <li><a href="#about" data-ko="소개" data-en="About">About</a></li>
+        <li><a href="#research" data-ko="연구 관심사" data-en="Research Interests">Research Interests</a></li>
+        <li><a href="#projects" data-ko="프로젝트" data-en="Projects">Projects</a></li>
     </ul>
     <button id="langToggle" style="margin-left:20px;"></button>
 </nav>
