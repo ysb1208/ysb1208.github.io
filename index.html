@@ -202,12 +202,12 @@ Paper
     
         <h3>A study on conditional music generation with GAN - <a href="https://ysb1208.github.io/museganpaper.pdf">PDF</a></h3>
     <p
-  data-ko="'musegan' 모델에 장르 condition을 추가해, condition에 따라 곡을 생성하는 모델에 관한 내용입니다."
+  data-ko="'MUSEGAN' 모델에 장르 condition을 추가해, condition에 따라 곡을 생성하는 모델에 관한 내용입니다."
   data-en="This paper is about a model that adds genre conditions to the "Musegan" model to generate songs based on the condition."
 </p>
        <p
   data-ko="학부연구생을 하면서 첫 연구를 진행하면서 쓴 논문입니다. 대학교에서 진행하는 '도전학기제'라는 과목을 통해 진행하였습니다. 모델 구조 개선부터 학습, 논문 작성 및 영문 발표까지 연구의 전반적인 과정을 경험할 수 있었습니다.
-           MUSEGAN이라고 하는 GAN 기반 음악 생성모델은 조건(장르)에 따라 음악을 생성 못한다는 한계가 있었습니다. 그래서 조건 정보를 넣을 수 있는 CGAN, ACGAN, LSGAN 구조를 적용시켜 학습시키고, 관련 metric으로 수치를 비교했습니다."
+           MUSEGAN이라고 하는 GAN 기반 음악 생성모델은 조건(장르)에 따라 음악을 생성 못한다는 한계가 있었습니다. <br> 그래서 조건 정보를 넣을 수 있는 CGAN, ACGAN, LSGAN 구조를 적용시켜 학습시키고, 관련 metric (EB, UP, PP)으로 기존 모델과 수치를 비교했습니다."
   data-en="This paper was written based on my first research experience as an undergraduate research student. I conducted this research through a university program called the 'Challenge Semester,' where I had to produce results within a given deadline.
         However, after implementing the model, the results were poor, and since I couldn't change the research topic, I eventually felt like I was doing it unwillingly. This made it a very disappointing study."
 </p>
@@ -263,20 +263,16 @@ Presented the paper in English
         </h4>
                 <ul>
                     <li
-  data-ko="도메인에 대한 충분한 이해가 있어야 모델이 문제인지 데이터셋이 문제인지 빠르게 판단 가능함"
+  data-ko="도메인에 대한 충분한 이해가 있어야 모델이 문제인지 데이터셋이 문제인지 빠르게 판단 가능하다. 연구 당시에는 모델 구성 방법이 문제라고 생각했으나 학습 데이터셋이 잘못되면 모델이 아무리 좋아도 학습이 제대로 안 되는 것을 간과했었음"
   data-en="Recognized the importance of having a deep understanding of the domain to distinguish whether issues stem from model architecture or dataset quality">
 Recognized the importance of having a deep understanding of the domain to distinguish whether issues stem from model architecture or dataset quality
 </li>
                     <li
-  data-ko="데이터셋의 질이 낮으면 모델 구조를 개선하더라도 성능 향상에 한계가 있음"
+  data-ko="데이터셋의 질이 낮으면 모델 구조를 개선하더라도 성능 향상에 한계가 있음. MUSEGAN-> CGAN, ACGAN, LSGAN으로 구조를 바꾸어서 학습을 하여도 세 모델 간 큰 차이가 없었음."
   data-en="Learned that improving the model cannot lead to significant performance gains when the dataset quality is low">
 Learned that improving the model cannot lead to significant performance gains when the dataset quality is low
 </li>
-                    <li
-  data-ko="모델 구조 개선보다 데이터셋 개선이 성능 향상에 더 효과적임"
-  data-en="Found that improving the dataset is often more effective than modifying the model architecture for performance enhancement">
-Found that improving the dataset is often more effective than modifying the model architecture for performance enhancement
-</li>
+                
         </ul>
         
             
@@ -297,7 +293,7 @@ Project 1 - Palletizing Robot
         브라우저가 영상을 지원하지 않습니다.
         </video>
         <p
-  data-ko="물체를 인식하여 옮기는 팔레타이징 로봇을 만드는 프로젝트입니다. 'yolact'을 기반으로 한 모델을 통해 객체 인식을 하여 좌표 값을 계산한 뒤, 아두이노를 통해 모터를 제어하여 물체를 지정된 위치로 이동시킵니다."
+  data-ko="물체를 인식하여 옮기는 팔레타이징 로봇을 만드는 프로젝트입니다. 'yolact'을 기반으로 한 모델을 통해 객체 인식을 하여 좌표 값을 계산한 뒤, 아두이노를 통해 모터를 제어하여 물체를 지정된 위치로 이동시킵니다.<br>'yolo'가 아닌 'yoloact'을 사용한 이유는 객체의 정확한 좌표를 얻어야 하기 때문입니다."
   data-en="This project involves creating a palletizing robot that recognizes and moves objects. Using a model based on 'YOLACT,' the robot calculates coordinate values to recognize objects and then controls the motor via Arduino to move them to designated positions."
 </p>
         
@@ -338,7 +334,7 @@ Integrated the camera and controlled motors using Arduino
         
         <ul>
             <li
-  data-ko="물체 위치에 따라 로봇팔 회전 정도가 달라지므로 Object Detection보다는 Segmentation이 효율적임"
+  data-ko="물체 위치에 따라 로봇팔 회전 정도가 달라지므로 Object Detection(yolo)보다는 Segmentation(yolact)이 효율적임"
   data-en="Since the rotation angle of the robotic arm varies depending on the object's location, segmentation is more efficient than object detection">
 Since the rotation angle of the robotic arm varies depending on the object's location, segmentation is more efficient than object detection
 </li>
@@ -370,7 +366,7 @@ Project 2 - Self-driving Electric Scooter System
         </video>
         <p
   data-ko="전동 킥보드를 위한 자율 주행 프로젝트입니다. 'yolo v5'를 기반으로 한 모델을 통해 사람이나 자동차 같은 충돌 위험요소를 카메라로 인식거나, 계단이나 푹 파인 곳 같이 위험한 곳 앞에서 라이다로 인식하면 아두이노를 통해 모터를 제어해 멈춤으로써
-            전동 킥보드 탑승자의 안전을 지켜주는 시스템을 구현하였습니다."
+            전동 킥보드 탑승자의 안전을 지켜주는 시스템을 구현하였습니다. <br> 123"
   data-en="This is a self-driving project for electric scooters. Using the 'YOLO v5 model, the system detects collision risk factors such as pedestrians or cars through a camera. Additionally, it identifies dangerous areas, such as stairs or deep cuts, using LiDAR. If a risk is detected, the motor is controlled via Arduino to stop the kickboard.
         We have implemented a system to ensure the safety of electric scooter passengers."
 </p>
@@ -438,6 +434,7 @@ Improve the algorithm to ensure no collisions occur during detection and stoppin
 
 </body>
 </html>
+
 
 
 
