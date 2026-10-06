@@ -50,7 +50,7 @@ html {
 }
 
 .skills-table {
-    width: 55%;          /* 60 → 55 (조금 더 컴팩트) */
+    width: 55%;           /* 컴팩트한 너비 유지 */
     margin-left: 0;
     margin-right: auto;
     border-collapse: collapse;
@@ -60,21 +60,17 @@ html {
 
 .skills-table th,
 .skills-table td {
-    border: 1px solid #ddd;
-    padding: 8px 10px;   /* ⭐ 핵심: 14px → 줄이기 */
-    text-align: left;    /* ⭐ center → left */
+    border: 1px solid #d1d5db; /* 선이 확실히 보이도록 진한 회색(#d1d5db)으로 조정 */
+    padding: 8px 10px;    
+    text-align: left;     
     vertical-align: top;
+    font-size: 14px;      /* 텍스트 크기도 표 크기에 맞게 살짝 조절하면 좋습니다 */
 }
 
 .skills-table th {
     background-color: #1a1d2b;
     color: white;
-    font-size: 15px;     /* 18 → 축소 */
-}
-
-.skills-table td {
-    font-size: 14px;     /* 16 → 축소 */
-    line-height: 1.5;    /* 1.8 → 밀도 증가 */
+    font-size: 15px;     
 }
 
 .awards-container{
